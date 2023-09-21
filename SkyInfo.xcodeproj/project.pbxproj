@@ -9,21 +9,34 @@
 /* Begin PBXBuildFile section */
 		ECDC57322ABCA986006EF076 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDC57312ABCA986006EF076 /* AppDelegate.swift */; };
 		ECDC57342ABCA986006EF076 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDC57332ABCA986006EF076 /* SceneDelegate.swift */; };
-		ECDC57362ABCA986006EF076 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDC57352ABCA986006EF076 /* ViewController.swift */; };
-		ECDC57392ABCA986006EF076 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECDC57372ABCA986006EF076 /* Main.storyboard */; };
 		ECDC573B2ABCA988006EF076 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECDC573A2ABCA988006EF076 /* Assets.xcassets */; };
 		ECDC573E2ABCA988006EF076 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECDC573C2ABCA988006EF076 /* LaunchScreen.storyboard */; };
+		ECDC574D2ABCAA8A006EF076 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDC574C2ABCAA8A006EF076 /* LocationManager.swift */; };
+		ECDC574F2ABCC9C4006EF076 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDC574E2ABCC9C4006EF076 /* WeatherViewController.swift */; };
+		ECDC57522ABCC9E7006EF076 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = ECDC57512ABCC9E7006EF076 /* SnapKit */; };
+		ECDC57542ABCCCEA006EF076 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDC57532ABCCCEA006EF076 /* SettingsViewController.swift */; };
+		ECDC57562ABCCCFF006EF076 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDC57552ABCCCFF006EF076 /* TabViewController.swift */; };
+		ECDC57582ABCCD35006EF076 /* CurrentWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDC57572ABCCD35006EF076 /* CurrentWeatherView.swift */; };
+		ECDC575A2ABCCD4A006EF076 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDC57592ABCCD4A006EF076 /* SettingsView.swift */; };
+		ECDC575C2ABCCD7F006EF076 /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDC575B2ABCCD7F006EF076 /* IAPManager.swift */; };
+		ECDC575E2ABCCD91006EF076 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDC575D2ABCCD91006EF076 /* WeatherManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ECDC572E2ABCA986006EF076 /* SkyInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECDC57312ABCA986006EF076 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECDC57332ABCA986006EF076 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ECDC57352ABCA986006EF076 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		ECDC57382ABCA986006EF076 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ECDC573A2ABCA988006EF076 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECDC573D2ABCA988006EF076 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECDC573F2ABCA988006EF076 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECDC574C2ABCAA8A006EF076 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		ECDC574E2ABCC9C4006EF076 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		ECDC57532ABCCCEA006EF076 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		ECDC57552ABCCCFF006EF076 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		ECDC57572ABCCD35006EF076 /* CurrentWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherView.swift; sourceTree = "<group>"; };
+		ECDC57592ABCCD4A006EF076 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		ECDC575B2ABCCD7F006EF076 /* IAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
+		ECDC575D2ABCCD91006EF076 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECDC57522ABCC9E7006EF076 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +70,77 @@
 		ECDC57302ABCA986006EF076 /* SkyInfo */ = {
 			isa = PBXGroup;
 			children = (
-				ECDC57312ABCA986006EF076 /* AppDelegate.swift */,
-				ECDC57332ABCA986006EF076 /* SceneDelegate.swift */,
-				ECDC57352ABCA986006EF076 /* ViewController.swift */,
-				ECDC57372ABCA986006EF076 /* Main.storyboard */,
-				ECDC573A2ABCA988006EF076 /* Assets.xcassets */,
-				ECDC573C2ABCA988006EF076 /* LaunchScreen.storyboard */,
+				ECDC574A2ABCAA60006EF076 /* Support */,
+				ECDC57492ABCAA57006EF076 /* Managers */,
+				ECDC57482ABCAA4F006EF076 /* Controllers */,
+				ECDC57472ABCAA48006EF076 /* Models */,
+				ECDC57462ABCAA41006EF076 /* ViewModels */,
+				ECDC57452ABCAA39006EF076 /* Views */,
 				ECDC573F2ABCA988006EF076 /* Info.plist */,
 			);
 			path = SkyInfo;
+			sourceTree = "<group>";
+		};
+		ECDC57452ABCAA39006EF076 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ECDC57572ABCCD35006EF076 /* CurrentWeatherView.swift */,
+				ECDC57592ABCCD4A006EF076 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ECDC57462ABCAA41006EF076 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		ECDC57472ABCAA48006EF076 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ECDC57482ABCAA4F006EF076 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ECDC574E2ABCC9C4006EF076 /* WeatherViewController.swift */,
+				ECDC57532ABCCCEA006EF076 /* SettingsViewController.swift */,
+				ECDC57552ABCCCFF006EF076 /* TabViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		ECDC57492ABCAA57006EF076 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				ECDC574C2ABCAA8A006EF076 /* LocationManager.swift */,
+				ECDC575B2ABCCD7F006EF076 /* IAPManager.swift */,
+				ECDC575D2ABCCD91006EF076 /* WeatherManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		ECDC574A2ABCAA60006EF076 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				ECDC574B2ABCAA67006EF076 /* Delegate */,
+				ECDC573A2ABCA988006EF076 /* Assets.xcassets */,
+				ECDC573C2ABCA988006EF076 /* LaunchScreen.storyboard */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		ECDC574B2ABCAA67006EF076 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				ECDC57312ABCA986006EF076 /* AppDelegate.swift */,
+				ECDC57332ABCA986006EF076 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +159,9 @@
 			dependencies = (
 			);
 			name = SkyInfo;
+			packageProductDependencies = (
+				ECDC57512ABCC9E7006EF076 /* SnapKit */,
+			);
 			productName = SkyInfo;
 			productReference = ECDC572E2ABCA986006EF076 /* SkyInfo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +190,9 @@
 				Base,
 			);
 			mainGroup = ECDC57252ABCA985006EF076;
+			packageReferences = (
+				ECDC57502ABCC9E7006EF076 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = ECDC572F2ABCA986006EF076 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +209,6 @@
 			files = (
 				ECDC573E2ABCA988006EF076 /* LaunchScreen.storyboard in Resources */,
 				ECDC573B2ABCA988006EF076 /* Assets.xcassets in Resources */,
-				ECDC57392ABCA986006EF076 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +219,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECDC57362ABCA986006EF076 /* ViewController.swift in Sources */,
+				ECDC575C2ABCCD7F006EF076 /* IAPManager.swift in Sources */,
+				ECDC574D2ABCAA8A006EF076 /* LocationManager.swift in Sources */,
+				ECDC575E2ABCCD91006EF076 /* WeatherManager.swift in Sources */,
+				ECDC575A2ABCCD4A006EF076 /* SettingsView.swift in Sources */,
+				ECDC574F2ABCC9C4006EF076 /* WeatherViewController.swift in Sources */,
 				ECDC57322ABCA986006EF076 /* AppDelegate.swift in Sources */,
 				ECDC57342ABCA986006EF076 /* SceneDelegate.swift in Sources */,
+				ECDC57582ABCCD35006EF076 /* CurrentWeatherView.swift in Sources */,
+				ECDC57562ABCCCFF006EF076 /* TabViewController.swift in Sources */,
+				ECDC57542ABCCCEA006EF076 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		ECDC57372ABCA986006EF076 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ECDC57382ABCA986006EF076 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		ECDC573C2ABCA988006EF076 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -358,6 +438,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ECDC57502ABCC9E7006EF076 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ECDC57512ABCC9E7006EF076 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECDC57502ABCC9E7006EF076 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ECDC57262ABCA985006EF076 /* Project object */;
 }
