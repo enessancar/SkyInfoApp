@@ -10,13 +10,20 @@ import SnapKit
 
 final class SettingsViewController: UIViewController {
     
-    private let primaryView = SettingsView()
+    private let primaryView: SettingsView = {
+        let view = SettingsView()
+        let viewModel = SetttingsViewViewModel(options: SettingOption.allCases)
+        view.configure(with: viewModel)
+        return view
+    }()
     
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemBackground
-        
+        setupView()
+    }
+    
+    private func setupView() {
         view.addSubview(primaryView)
         primaryView.snp.makeConstraints { make in
             make.edges.equalTo(view.safeAreaLayoutGuide)
