@@ -21,7 +21,21 @@
 		ECDC575C2ABCCD7F006EF076 /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDC575B2ABCCD7F006EF076 /* IAPManager.swift */; };
 		ECDC575E2ABCCD91006EF076 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDC575D2ABCCD91006EF076 /* WeatherManager.swift */; };
 		ECDC57602ABDDFD6006EF076 /* SetttingsViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDC575F2ABDDFD6006EF076 /* SetttingsViewViewModel.swift */; };
+		ECDC576F2ABF7B43006EF076 /* CurrentWeatherSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDC576E2ABF7B43006EF076 /* CurrentWeatherSection.swift */; };
+		ECDC57722AC015E3006EF076 /* CurrentWeatherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDC57712AC015E3006EF076 /* CurrentWeatherCollectionViewCell.swift */; };
+		ECDC57742AC0163F006EF076 /* HourlyWeatherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDC57732AC0163F006EF076 /* HourlyWeatherCollectionViewCell.swift */; };
+		ECDC57762AC01688006EF076 /* DailyWeatherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDC57752AC01688006EF076 /* DailyWeatherCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECDC57692ABE035F006EF076 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECDC57262ABCA985006EF076 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECDC572D2ABCA986006EF076;
+			remoteInfo = SkyInfo;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		ECDC572E2ABCA986006EF076 /* SkyInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +53,11 @@
 		ECDC575B2ABCCD7F006EF076 /* IAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
 		ECDC575D2ABCCD91006EF076 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 		ECDC575F2ABDDFD6006EF076 /* SetttingsViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetttingsViewViewModel.swift; sourceTree = "<group>"; };
+		ECDC57652ABE035F006EF076 /* SkyInfoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyInfoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECDC576E2ABF7B43006EF076 /* CurrentWeatherSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherSection.swift; sourceTree = "<group>"; };
+		ECDC57712AC015E3006EF076 /* CurrentWeatherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherCollectionViewCell.swift; sourceTree = "<group>"; };
+		ECDC57732AC0163F006EF076 /* HourlyWeatherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyWeatherCollectionViewCell.swift; sourceTree = "<group>"; };
+		ECDC57752AC01688006EF076 /* DailyWeatherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWeatherCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +66,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECDC57522ABCC9E7006EF076 /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECDC57622ABE035F006EF076 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				ECDC572E2ABCA986006EF076 /* SkyInfo.app */,
+				ECDC57652ABE035F006EF076 /* SkyInfoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,6 +113,7 @@
 		ECDC57452ABCAA39006EF076 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				ECDC57702AC015BD006EF076 /* WeatherCells */,
 				ECDC57572ABCCD35006EF076 /* CurrentWeatherView.swift */,
 				ECDC57592ABCCD4A006EF076 /* SettingsView.swift */,
 			);
@@ -96,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				ECDC575F2ABDDFD6006EF076 /* SetttingsViewViewModel.swift */,
+				ECDC576E2ABF7B43006EF076 /* CurrentWeatherSection.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -146,6 +175,16 @@
 			path = Delegate;
 			sourceTree = "<group>";
 		};
+		ECDC57702AC015BD006EF076 /* WeatherCells */ = {
+			isa = PBXGroup;
+			children = (
+				ECDC57712AC015E3006EF076 /* CurrentWeatherCollectionViewCell.swift */,
+				ECDC57732AC0163F006EF076 /* HourlyWeatherCollectionViewCell.swift */,
+				ECDC57752AC01688006EF076 /* DailyWeatherCollectionViewCell.swift */,
+			);
+			path = WeatherCells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -169,6 +208,24 @@
 			productReference = ECDC572E2ABCA986006EF076 /* SkyInfo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		ECDC57642ABE035F006EF076 /* SkyInfoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECDC576B2ABE035F006EF076 /* Build configuration list for PBXNativeTarget "SkyInfoTests" */;
+			buildPhases = (
+				ECDC57612ABE035F006EF076 /* Sources */,
+				ECDC57622ABE035F006EF076 /* Frameworks */,
+				ECDC57632ABE035F006EF076 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECDC576A2ABE035F006EF076 /* PBXTargetDependency */,
+			);
+			name = SkyInfoTests;
+			productName = SkyInfoTests;
+			productReference = ECDC57652ABE035F006EF076 /* SkyInfoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -181,6 +238,10 @@
 				TargetAttributes = {
 					ECDC572D2ABCA986006EF076 = {
 						CreatedOnToolsVersion = 14.1;
+					};
+					ECDC57642ABE035F006EF076 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = ECDC572D2ABCA986006EF076;
 					};
 				};
 			};
@@ -201,6 +262,7 @@
 			projectRoot = "";
 			targets = (
 				ECDC572D2ABCA986006EF076 /* SkyInfo */,
+				ECDC57642ABE035F006EF076 /* SkyInfoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -212,6 +274,13 @@
 			files = (
 				ECDC573E2ABCA988006EF076 /* LaunchScreen.storyboard in Resources */,
 				ECDC573B2ABCA988006EF076 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECDC57632ABE035F006EF076 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,14 +298,33 @@
 				ECDC575A2ABCCD4A006EF076 /* SettingsView.swift in Sources */,
 				ECDC574F2ABCC9C4006EF076 /* WeatherViewController.swift in Sources */,
 				ECDC57322ABCA986006EF076 /* AppDelegate.swift in Sources */,
+				ECDC57742AC0163F006EF076 /* HourlyWeatherCollectionViewCell.swift in Sources */,
 				ECDC57342ABCA986006EF076 /* SceneDelegate.swift in Sources */,
 				ECDC57582ABCCD35006EF076 /* CurrentWeatherView.swift in Sources */,
 				ECDC57562ABCCCFF006EF076 /* TabViewController.swift in Sources */,
+				ECDC576F2ABF7B43006EF076 /* CurrentWeatherSection.swift in Sources */,
 				ECDC57542ABCCCEA006EF076 /* SettingsViewController.swift in Sources */,
+				ECDC57762AC01688006EF076 /* DailyWeatherCollectionViewCell.swift in Sources */,
+				ECDC57722AC015E3006EF076 /* CurrentWeatherCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECDC57612ABE035F006EF076 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECDC576A2ABE035F006EF076 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECDC572D2ABCA986006EF076 /* SkyInfo */;
+			targetProxy = ECDC57692ABE035F006EF076 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		ECDC573C2ABCA988006EF076 /* LaunchScreen.storyboard */ = {
@@ -420,6 +508,42 @@
 			};
 			name = Release;
 		};
+		ECDC576C2ABE035F006EF076 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3KRQW7JR73;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = enes.SkyInfoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkyInfo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SkyInfo";
+			};
+			name = Debug;
+		};
+		ECDC576D2ABE035F006EF076 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3KRQW7JR73;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = enes.SkyInfoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkyInfo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SkyInfo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -437,6 +561,15 @@
 			buildConfigurations = (
 				ECDC57432ABCA988006EF076 /* Debug */,
 				ECDC57442ABCA988006EF076 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECDC576B2ABE035F006EF076 /* Build configuration list for PBXNativeTarget "SkyInfoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECDC576C2ABE035F006EF076 /* Debug */,
+				ECDC576D2ABE035F006EF076 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

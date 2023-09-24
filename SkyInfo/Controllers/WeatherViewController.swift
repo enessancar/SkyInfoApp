@@ -21,10 +21,10 @@ final class WeatherViewController: UIViewController {
     
     private func getLocation() {
         LocationManager.shared.getCurrentLocation { location in
-            print(String(describing: location))
-            
-            WeatherManager.shared.getWeather(for: location!) {
-                print(location)
+            WeatherManager.shared.getWeather(for: location) { [weak self] in
+                DispatchQueue.main.async {
+                    self?.primaryView.relaod()
+                }
             }
         }
     }

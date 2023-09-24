@@ -8,7 +8,13 @@
 import UIKit
 import SnapKit
 
+protocol SettingsViewDelegate: AnyObject {
+    func settingsView(_ settingsView: SettingsView, didTap option: SettingOption)
+}
+
 final class SettingsView: UIView {
+    
+    weak var delegate: SettingsViewDelegate?
     
     private var viewModel: SetttingsViewViewModel? {
         didSet {
@@ -51,7 +57,7 @@ final class SettingsView: UIView {
 //MARK: - TableView
 extension SettingsView: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        viewModel?.options.count ?? 0 
+        viewModel?.options.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -64,5 +70,10 @@ extension SettingsView: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        guard let viewModel else { return }
+        let option = viewModel.options[indexPath.row]
+            
+        delegate?.settingsView(self, didTap: option)
     }
 }

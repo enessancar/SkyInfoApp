@@ -21,6 +21,8 @@ final class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        
+        primaryView.delegate = self
     }
     
     private func setupView() {
@@ -31,3 +33,21 @@ final class SettingsViewController: UIViewController {
     }
 }
 
+extension SettingsViewController: SettingsViewDelegate {
+    func settingsView(_ settingsView: SettingsView, didTap option: SettingOption) {
+        switch option {
+        case .upgrade:
+            break
+        case .privacyPolicy:
+            break
+        case .terms:
+            break
+        case .contact:
+            break
+        case .getHelp:
+            break
+        case .rateApp:
+            break
+        }
+    }
+}

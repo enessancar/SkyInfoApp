@@ -24,7 +24,7 @@ final class LocationManager: NSObject, CLLocationManagerDelegate {
         }
     }
     
-    public func getCurrentLocation(completion: @escaping(CLLocation?) -> ()) {
+    public func getCurrentLocation(completion: @escaping(CLLocation) -> ()) {
         manager.requestWhenInUseAuthorization()
         manager.delegate = self
         manager.startUpdatingLocation()
