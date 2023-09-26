@@ -28,6 +28,7 @@ final class WeatherManager {
                 self.currentWeather = result.currentWeather
                 self.hourlyWeather = result.hourlyForecast.forecast
                 self.dailyWeather  = result.dailyForecast.forecast
+                completion()
                 
             } catch {
                 print(String(describing: error))
